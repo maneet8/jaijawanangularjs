@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
+
 <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JaiJawan biodiesel</title>
+    <title>JaiJawan biodiesel</title>
 
-<!-- angular lib -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/mysite.css">
+    <!-- angular lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 
-<!-- bootstrap css -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="./assets/js/mainController.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-        <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#">JaiJawan Biodiesel</a>
-                  </div>
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Current Research</a></li>
-                    <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Biodiesel
+
+<body ng-controller="myCtrl">
+    <div ng-include="'./assets/views/header.html'"></div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#!currentresearch">Current Research</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Biodiesel
                             <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">What is Biodiesel</a></li>
-                              <li><a href="#">History</a></li>
-                              <li><a href="#">Biodiesel A fuel of Future</a></li>
-                              <li><a href="#">SWOT Analysis</a></li>
-                              <li><a href="#">Facts and Figures</a></li>
-                            </ul>
-                          </li>
-                          <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Feedstock
+                    <ul class="dropdown-menu">
+                        <li><a href="#!whatisbiodiesel">What is Biodiesel</a></li>
+                        <li><a href="#!biodieselhistory">History</a></li>
+                        <li><a href="#!futurefuel">Biodiesel A fuel of Future</a></li>
+                        <li><a href="#!swotanalysis">SWOT Analysis</a></li>
+                        <li><a href="#!factsandfigures">Facts and Figures</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Feedstock
                                 <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                  <li><a href="#">About Feedstock</a></li>
-                                  <li><a href="#">Animal Tallow</a></li>
-                                  <li><a href="#">Biodiesel from Neem Oil</a></li>
-                                  <li><a href="#">Biodiesel from Palm Oil</a></li>
-                                  <li><a href="#">Rapeseed as a Fuel</a></li>
-                                  <li><a href="#">Rice Bran Oil</a></li>
-                                  <li><a href="#">Waste Vegetable Oil</a></li>
-                                </ul>
-                              </li>
-                    <li><a href="#">Government Vision</a></li>
-                    <li><a href="#">Company Mission</a></li>
-                    <li><a href="#">FAQ's</a></li>
-                    <li><a href="#">Desk of M.D.</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-              </nav>
+                    <ul class="dropdown-menu">
+                        <li><a href="#!aboutFeedStock">About Feedstock</a></li>
+                        <li><a href="#!animaltallow">Animal Tallow</a></li>
+                        <li><a href="#!biodieselfromneemoil">Biodiesel from Neem Oil</a></li>
+                        <li><a href="#!biodieselfrompalmoil">Biodiesel from Palm Oil</a></li>
+                        <li><a href="#!rapeseedasafuel">Rapeseed as a Fuel</a></li>
+                        <li><a href="#!ricebranoil">Rice Bran Oil</a></li>
+                        <li><a href="#!wastevegetableoil">Waste Vegetable Oil</a></li>
+                    </ul>
+                </li>
+                <li><a href="#!governmentvision">Government Vision</a></li>
+                <li><a href="#!companymission">Company Mission</a></li>
+                <li><a href="#!faq">FAQ's</a></li>
+                <li><a href="#!deskofmd">Desk of M.D.</a></li>
+                <li><a href="#!contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+        <div class="col-md-9">
+            <ng-view></ng-view>
+        </div>
+    </div>
 </body>
+
 </html>
