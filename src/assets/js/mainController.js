@@ -49,14 +49,17 @@ app.config(function ($routeProvider) {
         .when("/governmentvision", {
             templateUrl: "./assets/views/governmentvision.html"
         })
-        .when("/companymission", {
-            templateUrl: "./assets/views/companymission.html"
+        .when("/faq", {
+            templateUrl: "./assets/views/faq.html"
         })
         .when("/companymission", {
             templateUrl: "./assets/views/companymission.html"
         })
-        .when("/companymission", {
-            templateUrl: "./assets/views/companymission.html"
+        .when("/deskofmd", {
+            templateUrl: "./assets/views/deskofmd.html"
+        })
+        .when("/contact", {
+            templateUrl: "./assets/views/contact.html"
         })
         .when("/", {
             templateUrl: "./assets/views/home.html"
