@@ -1,5 +1,20 @@
 var app = angular.module("myApp", ["ngRoute"]);
 app.controller("myCtrl", function ($scope) {
+    $scope.lhn = [
+        {
+            "dispValue": "Historical Background",
+            "url": "#!biodieselhistory"
+        }, {
+            "dispValue": "Production",
+            "url": "#!production"
+        }, {
+            "dispValue": "Biodiesel Policies",
+            "url": "#!policies"
+        }, {
+            "dispValue": "Company Information",
+            "url": "#!companyinfo"
+        }
+    ]
 
 });
 app.config(function ($routeProvider) {
@@ -60,6 +75,15 @@ app.config(function ($routeProvider) {
         })
         .when("/contact", {
             templateUrl: "./assets/views/contact.html"
+        })
+        .when("/production", {
+            templateUrl: "./assets/views/production.html"
+        })
+        .when("/policies", {
+            templateUrl: "./assets/views/policies.html"
+        })
+        .when("/companyinfo", {
+            templateUrl: "./assets/views/companyinfo.html"
         })
         .when("/", {
             templateUrl: "./assets/views/home.html"

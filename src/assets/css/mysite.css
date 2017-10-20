@@ -1,3 +1,37 @@
 .header{
         background-color: lightblue;
 }
+
+.defaultSideMenu{
+        color:  #edeeb7;
+        text-align : center;
+        border-radius: 4px;
+        margin-top: 20px;
+        background: #75bb35;
+        background: -webkit-linear-gradient(180deg, #75bb35 , #2c7512);
+        background: linear-gradient(180deg, #75bb35 , #2c7512);
+                color: #121307;
+                margin-top: 30px;	
+                padding : 0px;
+                margin: 0px
+}
+.list-group-item{
+        color:  #edeeb7;
+        text-align : center;
+        border-radius: 4px
+}
+		
+	.list-group-item{
+                margin-top: 20px;
+		background: #75bb35;
+		background: -webkit-linear-gradient(180deg, #75bb35 , #2c7512);
+		background: linear-gradient(180deg, #75bb35 , #2c7512);
+			color: #121307
+        } 
+		
+	.list-group-item:first-child{
+                margin-top: 30px;	
+                padding : 0px;
+                margin: 0px
+        }
+		

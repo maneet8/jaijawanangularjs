@@ -64,9 +64,11 @@
     </nav>
     <div class="container">
         <div class="col-md-3">
-            <button type="button" class="btn btn-primary">Primary</button>
+            <div ng-repeat="option in lhn" class="list-group defaultSideMenu">
+                <a href="{{option.url}}" class="btn btn-default list-group-item">{{option.dispValue}}</a>
+            </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 ">
             <ng-view></ng-view>
         </div>
     </div>
