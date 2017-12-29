@@ -2,17 +2,17 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.controller("myCtrl", function ($scope) {
     $scope.lhn = [
         {
-            "dispValue": "Historical Background",
-            "url": "#!biodieselhistory"
+            "dispValue": "Application Form",
+            "url": "#!applicationform"
         }, {
-            "dispValue": "Production",
-            "url": "#!production"
+            "dispValue": "Retailers / Dealers",
+            "url": "#!dealers"
         }, {
-            "dispValue": "Biodiesel Policies",
-            "url": "#!policies"
+            "dispValue": "Investors",
+            "url": "#!investors"
         }, {
-            "dispValue": "Company Information",
-            "url": "#!companyinfo"
+            "dispValue": "Agents",
+            "url": "#!agents"
         }
     ]
 
@@ -87,5 +87,17 @@ app.config(function ($routeProvider) {
         })
         .when("/", {
             templateUrl: "./assets/views/home.html"
+        })
+        .when("/applicationform", {
+            templateUrl: "./assets/views/applicationform.html"
+        })
+        .when("/dealers", {
+            templateUrl: "./assets/views/dealers.html"
+        })
+        .when("/investors", {
+            templateUrl: "./assets/views/investors.html"
+        })
+        .when("/agents", {
+            templateUrl: "./assets/views/agents.html"
         });
 });
