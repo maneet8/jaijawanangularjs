@@ -1,5 +1,5 @@
 var app = angular.module("myApp", ["ngRoute"]);
-app.controller("myCtrl", function ($scope) {
+app.controller("myCtrl", function ($scope, $sce) {
     $scope.lhn = [
         {
             "dispValue": "Application Form",
@@ -11,8 +11,26 @@ app.controller("myCtrl", function ($scope) {
             "dispValue": "Investors",
             "url": "#!investors"
         }, {
-            "dispValue": "Agents",
+            "dispValue": "Representatives",
             "url": "#!agents"
+        }
+    ]
+    $scope.data = [
+        {
+            "name": "Retail Outlet",
+            "imgpath": "./assets/img/angularjslogo.jpg",
+            "topic": "Retail Outlet",
+            "Description": "Fill this Application Form if you want to open a Retail Outlet",
+            "id": "1",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
+        },
+        {
+            "name": "Biodiesel Outlet",
+            "imgpath": "./assets/img/awslogologo.jpg",
+            "topic": "Biodiesel Outlet",
+            "Description": "Fill this Application Form if you want to open a Biodiesel Plant",
+            "id": "2",
+            "url": "http://localhost:9092/"
         }
     ]
 
@@ -101,3 +119,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./assets/views/agents.html"
         });
 });
+
+app.filter('trusted', ['$sce', function ($sce) {
+    return function (url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+}]);

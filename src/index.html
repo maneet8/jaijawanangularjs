@@ -16,6 +16,9 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="./assets/css/nextcss.css">
+
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -65,7 +68,7 @@
     <div class="container">
         <div class="col-md-3">
             <div ng-repeat="option in lhn" class="list-group defaultSideMenu">
-                <a href="{{option.url}}" class="btn btn-default list-group-item">{{option.dispValue}}</a>
+                <a href="{{option.url}}" class="btn lhn-list">{{option.dispValue}}</a>
             </div>
         </div>
         <div class="col-md-9 ">
