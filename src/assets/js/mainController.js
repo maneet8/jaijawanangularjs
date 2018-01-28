@@ -28,9 +28,29 @@ app.controller("myCtrl", function ($scope, $sce) {
             "name": "Biodiesel Outlet",
             "imgpath": "./assets/img/awslogologo.jpg",
             "topic": "Biodiesel Outlet",
-            "Description": "Fill this Application Form if you want to open a Biodiesel Plant",
+            "Description": "Fill this Application Form if you want to open a Biodiesel Outlet",
             "id": "2",
-            "url": "http://localhost:9092/"
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLScR72WW8CfolqOI-Yqj60Yzw7LDipKvcWptPcbHS2CkzBPDng/viewform?embedded=true"
+        }
+    ]
+    $scope.investors = [
+        {
+            "name": "Investors",
+            "imgpath": "./assets/img/investors.jpg",
+            "topic": "Investors",
+            "Description": "Fill this Application Form if you want to invest in Jai Jawan Biodiesel",
+            "id": "1",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSfzRQiDqRzkc2wTshlaRXWwX9fQEEcAfdZFiNJkwBeLDSjp9A/viewform?embedded=true"
+        }
+    ]
+    $scope.representatives = [
+        {
+            "name": "Representatives",
+            "imgpath": "./assets/img/representative.jpg",
+            "topic": "Representatives",
+            "Description": "Fill this Application Form if you want to be representative for Jai Jawan Biodiesel",
+            "id": "1",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSdssz7Pltj3z79-vHTFp1VTSV0E08eOyrHoORLnBYLq1GtNcg/viewform?embedded=true"
         }
     ]
 
