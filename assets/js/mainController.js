@@ -17,17 +17,17 @@ app.controller("myCtrl", function ($scope, $sce) {
     ]
     $scope.data = [
         {
-            "name": "Retail Outlet",
+            "name": "Biodiesel Retail Outlet",
             "imgpath": "./assets/img/angularjslogo.jpg",
-            "topic": "Retail Outlet",
+            "topic": "Biodiesel Retail Outlet",
             "Description": "Fill this Application Form if you want to open a Retail Outlet",
             "id": "1",
             "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
         },
         {
-            "name": "Biodiesel Outlet",
+            "name": "Biodiesel Pump",
             "imgpath": "./assets/img/awslogologo.jpg",
-            "topic": "Biodiesel Outlet",
+            "topic": "Biodiesel Pump",
             "Description": "Fill this Application Form if you want to open a Biodiesel Outlet",
             "id": "2",
             "url": "https://docs.google.com/forms/d/e/1FAIpQLScR72WW8CfolqOI-Yqj60Yzw7LDipKvcWptPcbHS2CkzBPDng/viewform?embedded=true"
