@@ -45,10 +45,10 @@ app.controller("myCtrl", function ($scope, $sce) {
     ]
     $scope.representatives = [
         {
-            "name": "Representatives",
+            "name": "Distributorship",
             "imgpath": "./assets/img/representative.jpg",
-            "topic": "Representatives",
-            "Description": "Fill this Application Form if you want to be representative for Jai Jawan Biodiesel",
+            "topic": "Distributorship",
+            "Description": "Fill this Application Form if you want to be Distributorship for Jai Jawan Biodiesel",
             "id": "1",
             "url": "https://docs.google.com/forms/d/e/1FAIpQLSdssz7Pltj3z79-vHTFp1VTSV0E08eOyrHoORLnBYLq1GtNcg/viewform?embedded=true"
         }
