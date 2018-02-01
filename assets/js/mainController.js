@@ -11,7 +11,7 @@ app.controller("myCtrl", function ($scope, $sce) {
             "dispValue": "Investors",
             "url": "#!investors"
         }, {
-            "dispValue": "Representatives",
+            "dispValue": "Distributorship",
             "url": "#!agents"
         }
     ]
