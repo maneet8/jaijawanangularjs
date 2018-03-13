@@ -1,5 +1,5 @@
-<!-- <div ng-app="myApp" ng-controller="dealerCtrl">
-    <form>
+<div ng-app="myApp" ng-controller="dealerCtrl">
+    <!--  <form>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
@@ -44,5 +44,23 @@
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Sign in</button>
-    </form>
-</div> -->
+    </form>-->
+    <div ng-repeat="session in data" style="padding-bottom:20px">
+        <div class="w3-card-4">
+
+            <header class="w3-container w3-light-green">
+                <h3>{{session.name}}</h3>
+            </header>
+
+            <div class="w3-container">
+                <img src="{{session.imgpath}}" alt="Avatar" class="w3-left" style="padding:10px">
+                <h5>ADDRESS:</h5>
+                <p>{{session.address}}</p>
+            </div>
+
+            <button class="w3-button w3-block w3-dark-grey">Jai Jawan BioDiesel</button>
+
+        </div>
+    </div>
+
+</div>
