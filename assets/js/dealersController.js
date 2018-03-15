@@ -48,6 +48,22 @@ app.controller("dealerCtrl", function ($scope, $sce) {
             "address": "Village - Oran Distt - Banda U.P 210203",
             "id": "6",
             "url": "http://localhost:8001/"
+        },
+        {
+            "name": "Mr. Harnarayan S/O Prem Narayan",
+            "imgpath": "./assets/img/harnarayan.jpg",
+            "topic": "Restful",
+            "address": "Village - Patara Distt - Hamirpur U.P 210505",
+            "id": "7",
+            "url": "http://localhost:8001/"
+        },
+        {
+            "name": "Mr. Amit Kumar S/O Raj Kishore",
+            "imgpath": "./assets/img/amit.jpg",
+            "topic": "Restful",
+            "address": "Village - Nadhera Tehsil - Hamirpur Distt - Hamirpur U.P 210502",
+            "id": "8",
+            "url": "http://localhost:8001/"
         }
     ]
 });
