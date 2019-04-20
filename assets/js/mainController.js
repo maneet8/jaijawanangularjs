@@ -1,34 +1,37 @@
 var app = angular.module("myApp", ["ngRoute"]);
-app.controller("myCtrl", function($scope, $sce) {
+app.controller("myCtrl", function ($scope, $sce) {
     $scope.lhn = [{
         "dispValue": "Application Form",
         "url": "#!applicationform"
     }, {
         "dispValue": "Retailers / Dealers",
         "url": "#!dealers"
-    }, {
-        "dispValue": "Investors",
-        "url": "#!investors"
-    }, {
-        "dispValue": "Distributorship",
+    },
+    // {
+    //     "dispValue": "Investors",
+    //     "url": "#!investors"
+    // },
+    {
+        "dispValue": "Agency",
         "url": "#!agents"
     }]
     $scope.data = [{
-            "name": "Biodiesel Retail Outlet",
-            "imgpath": "./assets/img/angularjslogo.jpg",
-            "topic": "Biodiesel Retail Outlet",
-            "Description": "Fill this Application Form if you want to open a Retail Outlet",
-            "id": "1",
-            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
-        },
-        {
-            "name": "Biodiesel Pump",
-            "imgpath": "./assets/img/awslogologo.jpg",
-            "topic": "Biodiesel Pump",
-            "Description": "Fill this Application Form if you want to open a Biodiesel Outlet",
-            "id": "2",
-            "url": "https://docs.google.com/forms/d/e/1FAIpQLScR72WW8CfolqOI-Yqj60Yzw7LDipKvcWptPcbHS2CkzBPDng/viewform?embedded=true"
-        }
+        "name": "Biodiesel Retail Outlet",
+        "imgpath": "./assets/img/angularjslogo.jpg",
+        "topic": "Biodiesel Retail Outlet",
+        "Description": "Fill this Application Form if you want to open a Retail Outlet",
+        "id": "1",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
+    }
+        // ,
+        // {
+        //     "name": "Biodiesel Pump",
+        //     "imgpath": "./assets/img/awslogologo.jpg",
+        //     "topic": "Biodiesel Pump",
+        //     "Description": "Fill this Application Form if you want to open a Biodiesel Outlet",
+        //     "id": "2",
+        //     "url": "https://docs.google.com/forms/d/e/1FAIpQLScR72WW8CfolqOI-Yqj60Yzw7LDipKvcWptPcbHS2CkzBPDng/viewform?embedded=true"
+        // }
     ]
     $scope.investors = [{
         "name": "Investors",
@@ -39,16 +42,16 @@ app.controller("myCtrl", function($scope, $sce) {
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfzRQiDqRzkc2wTshlaRXWwX9fQEEcAfdZFiNJkwBeLDSjp9A/viewform?embedded=true"
     }]
     $scope.representatives = [{
-        "name": "Distributorship",
+        "name": "Agency",
         "imgpath": "./assets/img/representative.jpg",
-        "topic": "Distributorship",
-        "Description": "Fill this Application Form if you want to be Distributorship for Krasak Biofuels",
+        "topic": "Agency",
+        "Description": "Fill this Application Form if you want to be Agency for Krasak Biofuels",
         "id": "1",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSdssz7Pltj3z79-vHTFp1VTSV0E08eOyrHoORLnBYLq1GtNcg/viewform?embedded=true"
     }]
 
 });
-app.config(function($routeProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
         .when("/home", {
             templateUrl: "./assets/views/home.html"
@@ -147,8 +150,8 @@ app.config(function($routeProvider) {
 //     $scope.name = "John Doe";
 // });
 
-app.filter('trusted', ['$sce', function($sce) {
-    return function(url) {
+app.filter('trusted', ['$sce', function ($sce) {
+    return function (url) {
         return $sce.trustAsResourceUrl(url);
     };
 }]);
