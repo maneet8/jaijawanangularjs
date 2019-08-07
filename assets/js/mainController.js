@@ -12,7 +12,36 @@ app.controller("myCtrl", function ($scope, $sce) {
     //     "url": "#!investors"
     // },
     {
-        "dispValue": "Agency",
+        "dispValue": "Small Retail Shop",
+        "url": "#!agents"
+    }, {
+        "dispValue": "Mini Petrol Pump Shop",
+        "url": "#!applicationform"
+    }, {
+        "dispValue": "My Diesel Petrol Pump",
+        "url": "#!dealers"
+    },
+    {
+        "dispValue": "Mega Petrol Pump",
+        "url": "#!investors"
+    },
+    {
+        "dispValue": "Petrol Pump Depot",
+        "url": "#!agents"
+    }, {
+        "dispValue": "My Diesel Production Factory",
+        "url": "#!dealers"
+    },
+    {
+        "dispValue": "Registered Customers",
+        "url": "#!investors"
+    },
+    {
+        "dispValue": "Diesel Available on Demand",
+        "url": "#!agents"
+    },
+    {
+        "dispValue": "Our Dealers",
         "url": "#!agents"
     }]
     $scope.data = [{
