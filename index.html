@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Krasak Biofuels Pvt. Ltd.</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Krasak Biofuels Pvt. Ltd.</title>
 
 
-    <!-- angular lib -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+        <!-- angular lib -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 
-    <script src="./assets/js/mainController.js"></script>
-    <script src="./assets/js/dealersController.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-    <link rel="stylesheet" href="./assets/css/mysite.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/nextcss.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="./assets/js/mainController.js"></script>
+        <script src="./assets/js/dealersController.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        <link rel="stylesheet" href="./assets/css/mysite.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/nextcss.css">
+        <link rel="stylesheet" href="./assets/css/footer.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
 
-<body ng-controller="myCtrl">
-    <div ng-include="'./assets/views/header.html'"></div>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Introduction</a></li>
-                <li><a href="#!mydiesel">My Diesel</a></li>
-                <!-- <li class="dropdown">
+    <body ng-controller="myCtrl">
+        <div ng-include="'./assets/views/header.html'"></div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">होम</a></li>
+                    <li><a href="#!mydiesel">माई डीजल बी 100</a></li>
+                    <!-- <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Biodiesel
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -47,7 +47,7 @@
                         <li><a href="#!factsandfigures">Facts and Figures</a></li>
                     </ul>
                 </li> -->
-                <!-- <li class="dropdown">
+                    <!-- <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Feedstock
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -60,35 +60,35 @@
                         <li><a href="#!wastevegetableoil">Waste Vegetable Oil</a></li>
                     </ul>
                 </li> -->
-                <li><a href="#!investment">Investment</a></li>
-                <li><a href="#!partner">Partner</a></li>
-                <li><a href="#!loan">Loan</a></li>
-                <li><a href="#!team">Team</a></li>
-                <li><a href="#!deskofmd">Blog</a></li>
-                <li><a href="#!governmentvision">Government Vision</a></li>
-                <li><a href="#!companymission">Our Mission</a></li>
-                <li><a href="#!faq">News and Events</a></li>
-                <li><a href="#!contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="col-md-3">
-            <div ng-repeat="option in lhn" class="list-group defaultSideMenu">
-                <a href="{{option.url}}" class="btn lhn-list">{{option.dispValue}}</a>
+                    <li><a href="#!investment">निवेशक</a></li>
+                    <li><a href="#!partner">पार्टनर</a></li>
+                    <li><a href="#!loan">ऋण</a></li>
+                    <li><a href="#!team">बिजनेस टीम</a></li>
+                    <li><a href="#!deskofmd">ब्लॉग खबर व घटना</a></li>
+                    <li><a href="#!governmentvision">सरकार की नीति एवं उद्देश्य</a></li>
+                    <li><a href="#!companymission">हमारा उद्देश्य</a></li>
+                    <li><a href="#!faq">News and Events</a></li>
+                    <li><a href="#!contact">सम्पर्क एवं कार्यालय</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-md-3">
+                <div ng-repeat="option in lhn" class="list-group defaultSideMenu">
+                    <a href="{{option.url}}" class="btn lhn-list">{{option.dispValue}}</a>
+                </div>
+            </div>
+            <div class="col-md-9 ">
+                <ng-view></ng-view>
             </div>
         </div>
-        <div class="col-md-9 ">
-            <ng-view></ng-view>
-        </div>
-    </div>
-    <div ng-include="'./assets/views/footer.html'"></div>
-    <!-- <div class="w3-bar w3-teal">
+        <div ng-include="'./assets/views/footer.html'"></div>
+        <!-- <div class="w3-bar w3-teal">
         <a href="" class="w3-bar-item w3-button w3-hover-white">© Jai Jawan Biodiesel Pvt. Ltd.</a>
         <a href="" class="w3-bar-item w3-button w3-hover-white">Contact</a>
         <a href="" class="w3-bar-item w3-button w3-hover-white">Facebook<img src=""></a>
         <a href="" class="w3-bar-item w3-button w3-hover-white">WhatsApp</a>
     </div> -->
-</body>
+    </body>
 
 </html>

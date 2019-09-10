@@ -1,57 +1,58 @@
 var app = angular.module("myApp", ["ngRoute"]);
-app.controller("myCtrl", function ($scope, $sce) {
+app.controller("myCtrl", function($scope, $sce) {
     $scope.lhn = [{
-        "dispValue": "Application Form",
-        "url": "#!applicationform"
-    }, {
-        "dispValue": "Retailers / Dealers",
-        "url": "#!dealers"
-    },
-    // {
-    //     "dispValue": "Investors",
-    //     "url": "#!investors"
-    // },
-    {
-        "dispValue": "Small Retail Shop",
-        "url": "#!agents"
-    }, {
-        "dispValue": "Mini Petrol Pump Shop",
-        "url": "#!applicationform"
-    }, {
-        "dispValue": "My Diesel Petrol Pump",
-        "url": "#!dealers"
-    },
-    {
-        "dispValue": "Mega Petrol Pump",
-        "url": "#!investors"
-    },
-    {
-        "dispValue": "Petrol Pump Depot",
-        "url": "#!agents"
-    }, {
-        "dispValue": "My Diesel Production Factory",
-        "url": "#!dealers"
-    },
-    {
-        "dispValue": "Registered Customers",
-        "url": "#!investors"
-    },
-    {
-        "dispValue": "Diesel Available on Demand",
-        "url": "#!agents"
-    },
-    {
-        "dispValue": "Our Dealers",
-        "url": "#!agents"
-    }]
+            "dispValue": "पेटी डीलर /सप्लायर",
+            "url": "#!applicationform"
+        }, {
+            "dispValue": "हमारे डीलर/सप्लायर",
+            "url": "#!dealers"
+        },
+        // {
+        //     "dispValue": "Investors",
+        //     "url": "#!investors"
+        // },
+        {
+            "dispValue": "माई डीजल सप्लायर (केवल उ0 प्र0 के लिये)",
+            "url": "#!agents"
+        }, {
+            "dispValue": "पेटी - पेट्रोल पम्प (2000लीटर)",
+            "url": "#!applicationform"
+        }, {
+            "dispValue": "मिनी - पेट्रोल पम्प",
+            "url": "#!dealers"
+        },
+        {
+            "dispValue": "पेट्रोल पम्प डिपोट",
+            "url": "#!investors"
+        },
+        {
+            "dispValue": "मेगा - पेट्रोल पम्प",
+            "url": "#!agents"
+        }, {
+            "dispValue": "माई डीजल प्रोडक्शन फैक्ट्री",
+            "url": "#!dealers"
+        },
+        {
+            "dispValue": "रजिस्टर्ड कस्टमर योजना",
+            "url": "#!investors"
+        },
+        {
+            "dispValue": "दरवाजे-दरवाजे डीजल सप्लाई योजना",
+            "url": "#!agents"
+        },
+        {
+            "dispValue": "सम्पर्क एवं कार्यालय",
+            "url": "#!agents"
+        }
+    ]
     $scope.data = [{
-        "name": "Biodiesel Retail Outlet",
-        "imgpath": "./assets/img/angularjslogo.jpg",
-        "topic": "Biodiesel Retail Outlet",
-        "Description": "Fill this Application Form if you want to open a Retail Outlet",
-        "id": "1",
-        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
-    }
+            "name": "Biodiesel Retail Outlet",
+            "imgpath": "./assets/img/angularjslogo.jpg",
+            "topic": "Biodiesel Retail Outlet",
+            "Description": "Fill this Application Form if you want to open a Retail Outlet",
+            "id": "1",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
+        }
         // ,
         // {
         //     "name": "Biodiesel Pump",
@@ -80,7 +81,7 @@ app.controller("myCtrl", function ($scope, $sce) {
     }]
 
 });
-app.config(function ($routeProvider) {
+app.config(function($routeProvider) {
     $routeProvider
         .when("/home", {
             templateUrl: "./assets/views/home.html"
@@ -179,8 +180,8 @@ app.config(function ($routeProvider) {
 //     $scope.name = "John Doe";
 // });
 
-app.filter('trusted', ['$sce', function ($sce) {
-    return function (url) {
+app.filter('trusted', ['$sce', function($sce) {
+    return function(url) {
         return $sce.trustAsResourceUrl(url);
     };
 }]);
