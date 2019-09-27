@@ -89,6 +89,12 @@ app.config(function($routeProvider) {
         .when("/currentresearch", {
             templateUrl: "./assets/views/currentresearch.html"
         })
+        .when("/mydiesel", {
+            templateUrl: "./assets/views/mydiesel.html"
+        })
+        .when("/investment", {
+            templateUrl: "./assets/views/investors.html"
+        })
         .when("/whatisbiodiesel", {
             templateUrl: "./assets/views/whatisbiodiesel.html"
         })
