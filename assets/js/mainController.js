@@ -95,6 +95,12 @@ app.config(function($routeProvider) {
         .when("/investment", {
             templateUrl: "./assets/views/investors.html"
         })
+        .when("/loan", {
+            templateUrl: "./assets/views/loan.html"
+        })
+        .when("/team", {
+            templateUrl: "./assets/views/team.html"
+        })
         .when("/whatisbiodiesel", {
             templateUrl: "./assets/views/whatisbiodiesel.html"
         })
