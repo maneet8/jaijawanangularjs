@@ -2,7 +2,7 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.controller("myCtrl", function($scope, $sce) {
     $scope.lhn = [{
             "dispValue": "पेटी डीलर /सप्लायर",
-            "url": "#!applicationform"
+            "url": "#!petidealer"
         }, {
             "dispValue": "हमारे डीलर/सप्लायर",
             "url": "#!dealers"
@@ -19,7 +19,7 @@ app.controller("myCtrl", function($scope, $sce) {
             "url": "#!applicationform"
         }, {
             "dispValue": "मिनी - पेट्रोल पम्प",
-            "url": "#!dealers"
+            "url": "#!minipetrolpump"
         },
         {
             "dispValue": "पेट्रोल पम्प डिपोट",
@@ -175,6 +175,12 @@ app.config(function($routeProvider) {
         })
         .when("/agents", {
             templateUrl: "./assets/views/agents.html"
+        })
+        .when("/minipetrolpump", {
+            templateUrl: "./assets/views/minipetrolpump.html"
+        })
+        .when("/petidealer", {
+            templateUrl: "./assets/views/petidealer.html"
         });
 });
 
