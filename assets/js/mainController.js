@@ -42,7 +42,7 @@ app.controller("myCtrl", function($scope, $sce) {
         },
         {
             "dispValue": "सम्पर्क एवं कार्यालय",
-            "url": "#!agents"
+            "url": "#!contact"
         }
     ]
     $scope.data = [{
