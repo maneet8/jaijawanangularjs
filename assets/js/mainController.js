@@ -16,7 +16,7 @@ app.controller("myCtrl", function($scope, $sce) {
             "url": "#!agents"
         }, {
             "dispValue": "पेटी - पेट्रोल पम्प (2000लीटर)",
-            "url": "#!applicationform"
+            "url": "#!petipetrolpump"
         }, {
             "dispValue": "मिनी - पेट्रोल पम्प",
             "url": "#!minipetrolpump"
@@ -34,7 +34,7 @@ app.controller("myCtrl", function($scope, $sce) {
         },
         {
             "dispValue": "रजिस्टर्ड कस्टमर योजना",
-            "url": "#!investors"
+            "url": "#!registeredcustomer"
         },
         {
             "dispValue": "दरवाजे-दरवाजे डीजल सप्लाई योजना",
@@ -179,8 +179,14 @@ app.config(function($routeProvider) {
         .when("/minipetrolpump", {
             templateUrl: "./assets/views/minipetrolpump.html"
         })
+        .when("/registeredcustomer", {
+            templateUrl: "./assets/views/registeredcustomer.html"
+        })
         .when("/petidealer", {
             templateUrl: "./assets/views/petidealer.html"
+        })
+        .when("/petipetrolpump", {
+            templateUrl: "./assets/views/petipetrolpump.html"
         });
 });
 
