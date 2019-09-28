@@ -38,12 +38,13 @@ app.controller("myCtrl", function($scope, $sce) {
         },
         {
             "dispValue": "दरवाजे-दरवाजे डीजल सप्लाई योजना",
-            "url": "#!agents"
+            "url": "#!doortodoor"
         },
         {
             "dispValue": "सम्पर्क एवं कार्यालय",
             "url": "#!contact"
         }
+
     ]
     $scope.data = [{
             "name": "Biodiesel Retail Outlet",
@@ -184,6 +185,9 @@ app.config(function($routeProvider) {
         })
         .when("/petidealer", {
             templateUrl: "./assets/views/petidealer.html"
+        })
+        .when("/doortodoor", {
+            templateUrl: "./assets/views/doortodoor.html"
         })
         .when("/petipetrolpump", {
             templateUrl: "./assets/views/petipetrolpump.html"
