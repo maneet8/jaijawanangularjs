@@ -30,7 +30,7 @@ app.controller("myCtrl", function($scope, $sce) {
             "url": "#!agents"
         }, {
             "dispValue": "माई डीजल प्रोडक्शन फैक्ट्री",
-            "url": "#!dealers"
+            "url": "#!productionfactory"
         },
         {
             "dispValue": "रजिस्टर्ड कस्टमर योजना",
@@ -188,6 +188,9 @@ app.config(function($routeProvider) {
         })
         .when("/doortodoor", {
             templateUrl: "./assets/views/doortodoor.html"
+        })
+        .when("/productionfactory", {
+            templateUrl: "./assets/views/myDieselProductionFac.html"
         })
         .when("/petipetrolpump", {
             templateUrl: "./assets/views/petipetrolpump.html"
