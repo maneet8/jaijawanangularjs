@@ -44,11 +44,11 @@ app.controller("myCtrl", function($scope, $sce) {
         },
         {
             "dispValue": "कच्चा- माल की व्यवस्था टीम",
-            "url": "#!contact"
+            "url": "#!kachemaal"
         },
         {
             "dispValue": "दुनिया भर के बायोडीजल/नवीनीकरण डीजल निर्माताओं से संधि करना",
-            "url": "#!petipetrolpump"
+            "url": "#!navnikaran"
         },
 
     ]
@@ -209,6 +209,12 @@ app.config(function($routeProvider) {
         })
         .when("/partnership", {
             templateUrl: "./assets/views/partnership.html"
+        })
+        .when("/kachemaal", {
+            templateUrl: "./assets/views/kachemaal.html"
+        })
+        .when("/navnikaran", {
+            templateUrl: "./assets/views/navnikaran.html"
         })
         .when("/petipetrolpump", {
             templateUrl: "./assets/views/petipetrolpump.html"
