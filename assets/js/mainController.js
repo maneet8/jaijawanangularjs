@@ -1,49 +1,55 @@
 var app = angular.module("myApp", ["ngRoute"]);
 app.controller("myCtrl", function($scope, $sce) {
     $scope.lhn = [{
-            "dispValue": "पेटी डीलर /सप्लायर",
-            "url": "#!petidealer"
+            "dispValue": "आवेदन फॉर्म",
+            "url": "#!applicationform"
         }, {
-            "dispValue": "हमारे डीलर/सप्लायर",
+            "dispValue": "हमारे डीलर",
             "url": "#!dealers"
+        },
+        {
+            "dispValue": "मिनी - पेट्रोल पम्प",
+            "url": "#!minipetrolpump"
+        },
+        {
+            "dispValue": "मेगा - पेट्रोल पम्प",
+            "url": "#!agents"
+        },
+        {
+            "dispValue": "डिपोट - पेट्रोल पम्प",
+            "url": "#!investors"
+        }, {
+            "dispValue": "मेगा - हाईवे पेट्रोल पंप",
+            "url": "#!petidealer"
         },
         // {
         //     "dispValue": "Investors",
         //     "url": "#!investors"
         // },
         {
-            "dispValue": "माई डीजल सप्लायर (केवल उ0 प्र0 के लिये)",
+            "dispValue": "माई डीजल सप्लायर",
             "url": "#!agents"
-        }, {
-            "dispValue": "पेटी - पेट्रोल पम्प (2000लीटर)",
-            "url": "#!petipetrolpump"
-        }, {
-            "dispValue": "मिनी - पेट्रोल पम्प",
-            "url": "#!minipetrolpump"
         },
         {
-            "dispValue": "पेट्रोल पम्प डिपोट",
-            "url": "#!investors"
-        },
-        {
-            "dispValue": "मेगा - पेट्रोल पम्प",
-            "url": "#!agents"
-        }, {
-            "dispValue": "माई डीजल प्रोडक्शन फैक्ट्री",
+            "dispValue": "उत्पादन फैक्ट्री",
             "url": "#!productionfactory"
         },
         {
-            "dispValue": "रजिस्टर्ड कस्टमर योजना",
+            "dispValue": "रजिस्टर्ड कस्टमर",
             "url": "#!registeredcustomer"
         },
         {
-            "dispValue": "दरवाजे-दरवाजे डीजल सप्लाई योजना",
+            "dispValue": "होम - डिलीवरी",
             "url": "#!doortodoor"
         },
         {
-            "dispValue": "सम्पर्क एवं कार्यालय",
+            "dispValue": "कच्चा- माल की व्यवस्था टीम",
             "url": "#!contact"
-        }
+        },
+        {
+            "dispValue": "दुनिया भर के बायोडीजल/नवीनीकरण डीजल निर्माताओं से संधि करना",
+            "url": "#!petipetrolpump"
+        },
 
     ]
     $scope.data = [{
@@ -200,6 +206,9 @@ app.config(function($routeProvider) {
         })
         .when("/productionfactory", {
             templateUrl: "./assets/views/myDieselProductionFac.html"
+        })
+        .when("/partnership", {
+            templateUrl: "./assets/views/partnership.html"
         })
         .when("/petipetrolpump", {
             templateUrl: "./assets/views/petipetrolpump.html"
