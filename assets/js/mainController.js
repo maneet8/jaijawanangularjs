@@ -15,11 +15,12 @@ app.controller("myCtrl", function($scope, $sce) {
             "dispValue": "मेगा - पेट्रोल पम्प",
             "url": "#!agents"
         },
+        // {
+        //     "dispValue": "डिपोट - पेट्रोल पम्प",
+        //     "url": "#!investors"
+        // },
         {
-            "dispValue": "डिपोट - पेट्रोल पम्प",
-            "url": "#!investors"
-        }, {
-            "dispValue": "मेगा - हाईवे पेट्रोल पंप",
+            "dispValue": "सुपर - मेगा पेट्रोल पंप",
             "url": "#!petidealer"
         },
         // {
@@ -47,7 +48,7 @@ app.controller("myCtrl", function($scope, $sce) {
             "url": "#!kachemaal"
         },
         {
-            "dispValue": "दुनिया भर के बायोडीजल/नवीनीकरण डीजल निर्माताओं से संधि करना",
+            "dispValue": "दुनिया भर के बायोडीजल डीजल निर्माताओं से संधि करना",
             "url": "#!navnikaran"
         },
 
