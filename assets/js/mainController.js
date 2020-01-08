@@ -20,10 +20,10 @@ app.controller("myCtrl", function($scope, $sce) {
         //     "dispValue": "डिपोट - पेट्रोल पम्प",
         //     "url": "#!investors"
         // },
-        {
-            "dispValue": "सुपर - मेगा पेट्रोल पंप",
-            "url": "#!petidealer"
-        },
+        // {
+        //     "dispValue": "सुपर - मेगा पेट्रोल पंप",
+        //     "url": "#!petidealer"
+        // },
         // {
         //     "dispValue": "Investors",
         //     "url": "#!investors"
