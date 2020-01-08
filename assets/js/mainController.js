@@ -1,9 +1,11 @@
 var app = angular.module("myApp", ["ngRoute"]);
 app.controller("myCtrl", function($scope, $sce) {
-    $scope.lhn = [{
-            "dispValue": "आवेदन फॉर्म",
-            "url": "#!applicationform"
-        }, {
+    $scope.lhn = [
+        // {
+        //     "dispValue": "आवेदन फॉर्म",
+        //     "url": "#!applicationform"
+        // },
+        {
             "dispValue": "हमारे डीलर",
             "url": "#!dealers"
         },
@@ -27,10 +29,10 @@ app.controller("myCtrl", function($scope, $sce) {
         //     "dispValue": "Investors",
         //     "url": "#!investors"
         // },
-        {
-            "dispValue": "माई डीजल सप्लायर",
-            "url": "#!agents"
-        },
+        // {
+        //     "dispValue": "माई डीजल सप्लायर",
+        //     "url": "#!agents"
+        // },
         {
             "dispValue": "उत्पादन फैक्ट्री",
             "url": "#!productionfactory"
