@@ -16,22 +16,6 @@ app.controller("myCtrl", function($scope, $sce) {
             "dispValue": "मेगा - पेट्रोल पम्प",
             "url": "#!agents"
         },
-        // {
-        //     "dispValue": "डिपोट - पेट्रोल पम्प",
-        //     "url": "#!investors"
-        // },
-        // {
-        //     "dispValue": "सुपर - मेगा पेट्रोल पंप",
-        //     "url": "#!petidealer"
-        // },
-        // {
-        //     "dispValue": "Investors",
-        //     "url": "#!investors"
-        // },
-        // {
-        //     "dispValue": "माई डीजल सप्लायर",
-        //     "url": "#!agents"
-        // },
         {
             "dispValue": "उत्पादन फैक्ट्री",
             "url": "#!productionfactory"
@@ -55,23 +39,13 @@ app.controller("myCtrl", function($scope, $sce) {
 
     ]
     $scope.data = [{
-            "name": "Biodiesel Retail Outlet",
-            "imgpath": "./assets/img/angularjslogo.jpg",
-            "topic": "Biodiesel Retail Outlet",
-            "Description": "Fill this Application Form if you want to open a Retail Outlet",
-            "id": "1",
-            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
-        }
-        // ,
-        // {
-        //     "name": "Biodiesel Pump",
-        //     "imgpath": "./assets/img/awslogologo.jpg",
-        //     "topic": "Biodiesel Pump",
-        //     "Description": "Fill this Application Form if you want to open a Biodiesel Outlet",
-        //     "id": "2",
-        //     "url": "https://docs.google.com/forms/d/e/1FAIpQLScR72WW8CfolqOI-Yqj60Yzw7LDipKvcWptPcbHS2CkzBPDng/viewform?embedded=true"
-        // }
-    ]
+        "name": "Biodiesel Retail Outlet",
+        "imgpath": "./assets/img/angularjslogo.jpg",
+        "topic": "Biodiesel Retail Outlet",
+        "Description": "Fill this Application Form if you want to open a Retail Outlet",
+        "id": "1",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
+    }]
     $scope.investors = [{
         "name": "Investors",
         "imgpath": "./assets/img/investors.jpg",
@@ -222,20 +196,6 @@ app.config(function($routeProvider) {
             templateUrl: "./assets/views/petipetrolpump.html"
         });
 });
-
-// app.controller("dealerCtrl", function ($scope, $sce) {
-//     $scope.data = [
-//         {
-//             "name": "Biodiesel Retail Outlet",
-//             "imgpath": "./assets/img/angularjslogo.jpg",
-//             "topic": "Biodiesel Retail Outlet",
-//             "Description": "Fill this Application Form if you want to open a Retail Outlet",
-//             "id": "1",
-//             "url": "https://docs.google.com/forms/d/e/1FAIpQLSeztynG2BBTWrhwVXtEEcFHWabEIMdk8SMPVnstQIz-wesMYA/viewform?embedded=true"
-//         }
-//     ]
-//     $scope.name = "John Doe";
-// });
 
 app.filter('trusted', ['$sce', function($sce) {
     return function(url) {
