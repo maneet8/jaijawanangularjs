@@ -9,6 +9,10 @@ app.controller("myCtrl", function($scope, $sce) {
             "url": "#!dealers"
         },
         {
+            "dispValue": "माइक्रो - पेट्रोल पम्प",
+            "url": "#!micropump"
+        },
+        {
             "dispValue": "मिनी - पेट्रोल पम्प",
             "url": "#!minipetrolpump"
         },
@@ -134,6 +138,9 @@ app.config(function($routeProvider) {
         })
         .when("/faq", {
             templateUrl: "./assets/views/faq.html"
+        })
+        .when("/micropump", {
+            templateUrl: "./assets/views/micropump.html"
         })
         .when("/companymission", {
             templateUrl: "./assets/views/companymission.html"
