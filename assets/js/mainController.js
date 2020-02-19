@@ -8,18 +8,18 @@ app.controller("myCtrl", function($scope, $sce) {
             "dispValue": "हमारे डीलर",
             "url": "#!dealers"
         },
-        {
-            "dispValue": "माइक्रो - पेट्रोल पम्प",
-            "url": "#!micropump"
-        },
-        {
-            "dispValue": "मिनी - पेट्रोल पम्प",
-            "url": "#!minipetrolpump"
-        },
-        {
-            "dispValue": "मेगा - पेट्रोल पम्प",
-            "url": "#!agents"
-        },
+        // {
+        //     "dispValue": "माइक्रो - पेट्रोल पम्प",
+        //     "url": "#!micropump"
+        // },
+        // {
+        //     "dispValue": "मिनी - पेट्रोल पम्प",
+        //     "url": "#!minipetrolpump"
+        // },
+        // {
+        //     "dispValue": "मेगा - पेट्रोल पम्प",
+        //     "url": "#!agents"
+        // },
         {
             "dispValue": "उत्पादन फैक्ट्री",
             "url": "#!productionfactory"
